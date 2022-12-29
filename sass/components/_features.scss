@@ -1,0 +1,31 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__title {
+        color: $header-color;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 700;
+        @include font(14, 1.14, 0.03);
+    }
+    &__text {
+        color: $text-color;
+        font-weight: 400;
+        @include font(14, 1.71, 0.03);
+        width: 270px;
+    }
+    &__svg {
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        @include flex();
+    }
+    
+}
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

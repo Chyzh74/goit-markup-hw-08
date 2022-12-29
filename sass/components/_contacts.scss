@@ -1,0 +1,25 @@
+.contacts {
+    display: flex;
+    margin-left: 300px;
+    &__list {
+    font-weight: 500;    
+    @include font(14, 1.14, 0.02);
+    color: $text-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: $duration $timing-function;
+    }
+        &__list:hover,
+        &__list:focus {
+            color: $logo-color;
+        }
+    &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    }
+    & &__item+&__item {
+        margin-left: 50px;
+    }
+}
+

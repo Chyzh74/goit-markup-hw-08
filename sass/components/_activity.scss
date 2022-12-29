@@ -1,0 +1,37 @@
+.activity {
+    color: $header-color;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 700;
+        @include font(36, 1.16, 0.03);
+    }
+    &__work-thumb {
+    display: inline-flex;
+    position: relative;
+    }
+    &__work-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include flex();
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    @include font(14, 1.14, 0.03);
+    text-transform: uppercase;
+
+    color: $main-color;
+    }
+}
+
+
+
+
+

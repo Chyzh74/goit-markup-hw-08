@@ -1,0 +1,50 @@
+.client-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.client-title {
+    width: 299px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+    @include font(36, 1.16, 0.03);
+}
+
+.client-list {
+    @include flex();
+}
+
+.client-item {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    @include flex();
+    width: 100%;
+    height: 100%;
+}
+
+.client-icon {
+    fill: #afb1b8;
+    transition: $duration $timing-function;
+}
+
+.client-item:focus,
+.client-item:hover .client-icon {
+    fill: $logo-color;
+}
+
+.client-item:focus,
+.client-item:hover {
+    border-color: $logo-color;
+}

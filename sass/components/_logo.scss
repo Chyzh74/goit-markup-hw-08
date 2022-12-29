@@ -1,0 +1,12 @@
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    @include font (26, 1.19, none);
+    color: $logo-color;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.page-header__logo {
+    color: $header-color;
+}
