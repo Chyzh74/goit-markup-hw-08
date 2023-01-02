@@ -1,31 +1,52 @@
 .client-section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 960px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .client-title {
-    width: 299px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    text-align: center;
     font-weight: 700;
-    @include font(36, 1.16, 0.03);
+    @include font(28, 1.17, 0.03);
+    margin-bottom: 30px;
+    
+    @media screen and (min-width: px) {
+        margin-bottom: 50px;
+        @include font(36, 1.16, 0.03);
+    }
 }
 
 .client-list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 2);
+    gap: 30px;
     @include flex();
+    @media screen and (min-width: 960px) {
+        gap: 0px;
+    }
 }
 
 .client-item {
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    @media screen and (min-width: 960px) {
+        width: 170px;
+    }  
 }
 
 .client-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 0px;
+    @media screen and (min-width: 960px) {
+        margin-right: 30px;
+    }
 }
 
 .client-link {
@@ -39,12 +60,17 @@
     transition: $duration $timing-function;
 }
 
-.client-item:focus,
 .client-item:hover .client-icon {
     fill: $logo-color;
 }
 
-.client-item:focus,
+.client-item:focus .client-icon {
+    fill: $logo-color;
+}
+
 .client-item:hover {
+    border-color: $logo-color;
+}
+.client-item:focus {
     border-color: $logo-color;
 }

@@ -22,6 +22,11 @@
         width: 608px;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (max-width: 767px) {
+            @include font(26, 1.61, 0.06);
+            width: 360px;
+            padding-top: 118px;
+        }
     }
     &__btn {
         padding: 10px 24px;
@@ -39,13 +44,21 @@
 
         width: 216px;
         margin-left: 477px;
-              
         transition: $duration $timing-function;
+        @media screen and (max-width: 767px) {
+            @include font (16, 1.87, 0.05);
+            margin-left: 125px;
+            width: 200px;
+           
+        }
     }
     &__btn:hover,
     &__btn:focus {
         cursor: pointer;
         background-color: $focus-btn-color;
+    }
+    @media screen and (max-width: 767px) {
+        height: 400px;
     }
 }
 @media (min-resolution: 2dppx) {

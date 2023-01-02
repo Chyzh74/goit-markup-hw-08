@@ -1,41 +1,50 @@
 .team {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-    width: 1170px;
+    @media screen and (min-width: 960px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     &__section {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-color: #f5f4fa;
+        @media screen and (min-width: 960px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
     }
      &__title {
         color: $header-color;
         font-weight: 700;
         @include font(36, 1.16, 0.03);
         text-align: center;
-
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 960px) {
+            margin-bottom: 50px;
+        }
     }
 }
 .team-card {
-    width: 270px;
-    height: 428px;
+    width: 450px;
+    height: 594px;
     background: $main-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
     &__name {
         color: $header-color;
         font-weight: 500;
-        @include font(16, 1.18, none);
+        @include font(16, 1.18, 0.03);
         margin-top: 30px;
     }
     &__role {
         color: $text-color;
         font-weight: 400;
-        @include font(16, 1.18, none);
+        @include font(16, 1.18, 0.03);
         margin-top: 10px;
     }
     &__soc-list {
@@ -58,8 +67,16 @@
         border-radius: 50%;
         transition: $duration $timing-function;
     }
-    &__soc-link:hover {
+    &__soc-link:hover,
+    &__soc-link:focus {
         background-color: $logo-color;
         fill: $main-color;
+    }
+    @media screen and (min-width: 960px) {
+        width: 270px;
+        height: 428px;
+        &:not(:last-child) {
+                margin-bottom: 0px;
+            }
     }
 }
