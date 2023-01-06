@@ -1,21 +1,52 @@
 .logo-footer {
     font-family: 'Raleway';
-    @include font(26, 1.19, 0.03);
+    font-weight: 700;
+    @include font(24, 1.16, 0.03);
     color: $main-color;
+  
 }
+.logo-footer-main {
+    font-family: 'Raleway';
+    font-weight: 700;
+    @include font (24, 1.16, 0.03);
+    color: $logo-color;
+    text-decoration: none;
+    font-style: normal;
+    padding: 16px 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+
+}    
 .footer {
     background-color: $background-color;
+    @media screen and (max-width: 767px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
 }
 .address {
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media screen and (min-width: 767px) {
     padding: 60px 215px;
     height: 252px;
     width: 1600px;
 
     display: flex;
     align-items: baseline;
+    }
+    
 }
 
 .address-point {
+    text-align: center;
     color: $main-color;
     font-weight: 400;
     @include font(14, 1.71, 0.03);
@@ -38,7 +69,13 @@
 }
 
 .foot-addr-item {
-    margin-top: 9px;
+    margin-top: 8px;
+    text-align: center;
+    @media screen and (min-width: 960px) {
+        margin-top: 9px;
+        text-align: left;
+    }
+    
 }
 
 .footer-main-container {
@@ -51,20 +88,35 @@
 }
 
 .footer-soc-box {
-    margin-left: 62px;
+    padding: 60px 0;
+    @media screen and (min-width: 960px) {
+        margin-left: 62px;
+        padding: 0;
+    }
+    
 }
 
 .footer-soc-title {
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    
     font-weight: 700;
     @include font(14, 1.14, 0.03);
     text-transform: uppercase;
     color: $main-color;
+    @media screen and (min-width: 960px) {
+        margin-bottom: 30px;
+    }
 }
 
 .footer-soc-list {
-    display: flex;
+    @include flex();
+    @media screen and (min-width: 960px) {
+        display: flex;
+    }
 }
+    
+
 
 .footer-soc-items {
     width: 44px;
@@ -99,13 +151,18 @@
     text-transform: uppercase;
     color: $main-color;
     margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .input-subscribe {
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
     height: 50px;
 
     padding-left: 16px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -114,13 +171,20 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     transition: border $duration $timing-function;
+    @media screen and (min-width: 960px) {
+        width: 358px;
+    }
 }
 
 .form-subscribe {
-    margin-left: 123px;
-    margin-right: 0;
+    
+    
+    @media screen and (min-width: 960px) {
+        margin-left: 123px;
+        margin-right: 0;
 
-    min-width: 570px;
+        min-width: 570px;
+    }
 }
 
 .btn-subscribe {
@@ -129,7 +193,9 @@
 
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    
     padding-left: 28px;
 
     font-family: inherit;
@@ -142,6 +208,9 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color $duration $timing-function;
+     @media screen and (min-width: 960px) {
+        margin-left: 12px;
+    }
 }
 
 .btn-subscribe:hover,
@@ -155,6 +224,10 @@
 }
 
 .subscribe-box {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 960px) {
+        display: flex;
+        align-items: center;
+    }
+    
 }

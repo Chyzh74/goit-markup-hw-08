@@ -1,25 +1,45 @@
 .contacts {
-    display: flex;
-    margin-left: 300px;
+    display: block;
+    
+    @media screen and (min-width: 960px) {
+        margin-left: 300px;
+        display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        margin-left: 77px;
+    }
     &__list {
-    font-weight: 500;    
-    @include font(14, 1.14, 0.02);
-    color: $text-color;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: $duration $timing-function;
+        font-weight: 500;
+        @include font(14, 1.14, 0.02);
+        color: $text-color;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: $duration $timing-function;
     }
-        &__list:hover,
-        &__list:focus {
-            color: $logo-color;
-        }
+
+    &__list:hover,
+    &__list:focus {
+        color: $logo-color;
+    }
+
     &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+        margin-right: 10px;
+        fill: currentColor;
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            margin-right: 8px;
+            
+        }
     }
+
     & &__item+&__item {
-        margin-left: 50px;
+        @media screen and (min-width: 960px) {
+            margin-left: 50px;
+        }
+        
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+        
     }
 }
-

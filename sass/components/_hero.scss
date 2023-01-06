@@ -1,6 +1,6 @@
 .hero {
-    height: 600px;
-    max-width: 1600px;
+    height: 400px;
+    max-width: 767.98px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 200px;
@@ -9,23 +9,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 118px 0;
     &__title {
         color: $main-color;
         font-weight: 900;
-        @include font(44, 1.36, 0.06);
+        @include font(26, 1.61, 0.06);
+        max-width: 360px;
         text-transform: uppercase;
-
-        padding-top: 200px;
         margin-bottom: 30px;
         text-align: center;
-
-        width: 608px;
         margin-left: auto;
         margin-right: auto;
-        @media screen and (max-width: 767px) {
-            @include font(26, 1.61, 0.06);
-            width: 360px;
-            padding-top: 118px;
+        @media screen and (min-width: 960px) {
+            @include font(44, 1.36, 0.06);
+            padding-top: 200px;
+            width: 608px;
+            max-width: 1600px;
         }
     }
     &__btn {
@@ -36,20 +35,22 @@
         border: 0;
 
         font-weight: 700;
-        @include font (16, 1.87, 0.06);
+        
         cursor: pointer;
         font-family: inherit;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-
-        width: 216px;
-        margin-left: 477px;
+        @include font (16, 1.87, 0.05);
+    
+        min-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
         transition: $duration $timing-function;
-        @media screen and (max-width: 767px) {
-            @include font (16, 1.87, 0.05);
-            margin-left: 125px;
-            width: 200px;
-           
+        @media screen and (min-width: 960px) {
+            @include font (16, 1.87, 0.06);
+            width: 216px;
+        
         }
     }
     &__btn:hover,
@@ -57,33 +58,33 @@
         cursor: pointer;
         background-color: $focus-btn-color;
     }
-    @media screen and (max-width: 767px) {
-        height: 400px;
+    @media screen and (min-width: 960px) {
+        height: 600px;
     }
 }
 @media (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/hero_mobile2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_mobile2x.jpg);
     }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .hero {
-        background-image: url(../img/hero_tablet.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_tablet.jpg);
     }
         @media (min-resolution: 2dppx) {
             .hero {
-                background-image: url(../img/hero_tablet2x.jpg);
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_tablet2x.jpg);
             }
         }
 }
 @media (min-width: 960px) {
     .hero {
-        background-image: url(../img/hero_desktop.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_desktop.jpg);
     }
 
     @media (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero_desktop2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_desktop2x.jpg);
         }
     }
 }

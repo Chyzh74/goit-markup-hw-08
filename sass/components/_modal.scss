@@ -15,12 +15,16 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
-    min-height: 581px;
+    max-width: 480px;
+    min-height: 609px;
     background-color: $main-color;
     border-radius: 4px;
 
     transition: transform 300ms linear;
+    @media screen and (min-width: 960px) {
+        max-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .backdrop .is-hidden .modal {
@@ -150,18 +154,26 @@
     border: 2px solid $portfolio-main;
     border-radius: 4px;
     fill: none;
-    margin-right: 8.38px;
-    margin-left: 14px;
+    margin-right: 6px;
+    @media screen and (min-width: 960px) {
+        margin-left: 14px;
+        margin-right: 8.38px;
+    }
+  
 }
 
 .modal-checkbox-label {
     display: flex;
-    align-items: center;
+    align-items: end;
 
     font-style: normal;
     font-weight: 400;
-    @include font(14, 1.71, 0.03);
+    @include font(11, 1.16, 0.03);
     color: $text-color;
+    @media screen and (min-width: 960px) {
+        @include font(14, 1.71, 0.03);
+        align-items: center;
+    }
 }
 
 .modal-checkbox:checked+.modal-checkbox-label>span {
@@ -178,12 +190,16 @@
 .modal-link {
     font-style: normal;
     font-weight: 400;
-    @include font(14, 1.71, 0.03);
+    @include font(11, 1.16, 0.03);
     text-decoration-line: none;
 
     color: $logo-color;
-    margin-left: 6px;
+    margin-left: 3px;
     border-bottom: 1px solid;
+    @media screen and (min-width: 960px) {
+        @include font(14, 1.71, 0.03);
+        margin-left: 6px;
+    }
 }
 
 .modal-btn {

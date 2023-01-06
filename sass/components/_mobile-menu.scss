@@ -1,0 +1,137 @@
+.menu-button {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 20;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button .icon-cross:hover,
+.menu-button .icon-cross:focus {
+    fill: $logo-color;
+}
+
+.mobile-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+    
+}
+.mobile-menu {
+    overflow: hidden;
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+    padding: 48px 40px;
+    overflow: scroll;
+    
+    transition: $duration $timing-function;
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+    }
+}
+.mobile-menu.is-open {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.mobile-menu__list {
+    padding: 0;
+}
+.mobile-menu__list-item {
+    list-style: none;   
+}
+.mobile-menu__list-item:not(:last-child) {
+    margin-bottom: 32px; 
+}
+.mobile-menu__list-link {
+    font-weight: 500;
+    font-style: normal;
+    @include font (40, 1.17, 0.02);
+    color: $header-color;
+
+    
+}
+.mobile-menu__list-link:hover,
+.mobile-menu__list-link:focus {
+    color: $logo-color;
+}
+
+.mobile-menu__list-link.current {
+    color: $logo-color;
+}
+.mobile-contacts__item {
+    list-style: none;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    
+
+}
+.soc-link__mobile {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    // margin-top: 32px;
+
+}
+.mobile-contacts {
+    padding: 0;
+}
+.mobile-contacts__list--numbers {
+    font-weight: 500;
+    font-style: normal;
+    @include font (30, 1.17, 0.02);
+    
+    color: $logo-color;
+    
+}
+.mobile-contacts__list--mail {
+    font-weight: 500;
+    font-style: normal;
+    @include font (24, 1.16, 0.02);
+    
+    color: $text-color;
+}
+.soc-link__link {
+    font-style: normal;
+    font-weight: 500;
+    @include font (14, 1.22, 0.02);
+    color: $logo-color;
+}
+
+
+.soc-link__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, .2);
+    padding-right: 10px;
+}
+.soc-link__item:not(:first-child) {
+    padding-left: 10px;
+}
