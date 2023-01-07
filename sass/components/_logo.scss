@@ -1,23 +1,22 @@
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    @include font (24, 1.16, 0.03);
-    color: $logo-color;
-    text-decoration: none;
-    font-style: normal;
-    padding: 16px 0;
-    display: flex;
-    align-items: center;
-    @media screen and (min-width: 960px) {
-        @include font (26, 1.19, 0.03);
-    }
-    @media screen and (min-width: 768px) and (max-width: 960px) {
-        padding: 26px 0;
-    }
+  font-family: 'Raleway';
+  font-weight: 700;
+  @include font(24, 1.16, 0.03);
+  color: $logo-color;
+  text-decoration: none;
+  font-style: normal;
+
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 960px) {
+    @include font(26, 1.19, 0.03);
+  }
 }
 
 .page-header__logo {
-    padding: 0;
-    color: $header-color;
+  padding: 16px 0;
+  color: $header-color;
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    padding: 26px 0;
+  }
 }
-   

@@ -1,46 +1,45 @@
 .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 318px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    @media screen and (min-width: 960px) {
-        margin-left: 300px;
-        display: flex;
-    }
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    margin-left: 77px;
+  }
+  &__list {
+    font-weight: 500;
+    @include font(14, 1.14, 0.02);
+    color: $text-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: $duration $timing-function;
+  }
+
+  &__list:hover,
+  &__list:focus {
+    color: $logo-color;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
     @media screen and (min-width: 768px) and (max-width: 960px) {
-        margin-left: 77px;
+      margin-right: 8px;
     }
-    &__list {
-        font-weight: 500;
-        @include font(14, 1.14, 0.02);
-        color: $text-color;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        transition: $duration $timing-function;
-    }
+  }
 
-    &__list:hover,
-    &__list:focus {
-        color: $logo-color;
+  & &__item + &__item {
+    @media screen and (min-width: 960px) {
+      margin-left: 30px;
     }
-
-    &__icon {
-        margin-right: 10px;
-        fill: currentColor;
-        @media screen and (min-width: 768px) and (max-width: 960px) {
-            margin-right: 8px;
-            
-        }
-    }
-
-    & &__item+&__item {
-        @media screen and (min-width: 960px) {
-            margin-left: 50px;
-        }
-        
-    }
-    @media screen and (max-width: 767px) {
-        display: none;
-        
-    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

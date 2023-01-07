@@ -1,243 +1,248 @@
 .logo-footer {
-    font-family: 'Raleway';
-    font-weight: 700;
-    @include font(24, 1.16, 0.03);
-    color: $main-color;
-  
+  font-family: 'Raleway';
+  font-weight: 700;
+  @include font(24, 1.16, 0.03);
+  color: $main-color;
 }
 .logo-footer-main {
-    font-family: 'Raleway';
-    font-weight: 700;
-    @include font (24, 1.16, 0.03);
-    color: $logo-color;
-    text-decoration: none;
-    font-style: normal;
-    padding: 16px 0;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    @media screen and (min-width: 768px){
-        display: block;
-    }
-
-}    
-.footer {
-    background-color: $background-color;
+  font-family: 'Raleway';
+  font-weight: 700;
+  @include font(24, 1.16, 0.03);
+  color: $logo-color;
+  text-decoration: none;
+  font-style: normal;
+  padding: 16px 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 959px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-   
-    
+  }
+  @media screen and (min-width: 1200px) {
+    display: contents;
+ 
+  }
+}
+.footer {
+  background-color: $background-color;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 959px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .address {
-    
-    @media screen and (min-width: 768px) and (max-width: 960px) {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    
-    }
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-
-    @media screen and (min-width: 960px) {
-    padding: 60px 215px;
-    height: 252px;
-    width: 1600px;
-
+  @media screen and (min-width: 960px) {
     display: flex;
     align-items: baseline;
-    }
-    
+  }
 }
 
 .address-point {
-    text-align: center;
-    color: $main-color;
-    font-weight: 400;
-    @include font(14, 1.71, 0.03);
-    font-style: normal;
-    margin-top: 20px;
+  text-align: center;
+  color: $main-color;
+  font-weight: 400;
+  @include font(14, 1.71, 0.03);
+  font-style: normal;
+  margin-top: 20px;
 }
 
 .contacts-list {
-    text-decoration: none;
-    font-weight: 400;
-    @include font(14, 1.71, 0.03);
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    margin-top: 9px;
+  text-decoration: none;
+  font-weight: 400;
+  @include font(14, 1.71, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  margin-top: 9px;
 }
 
 .contacts-list:hover,
 .contacts-list:focus {
-    color: $logo-color;
+  color: $logo-color;
 }
 
 .foot-addr-item {
-    margin-top: 8px;
-    text-align: center;
-    @media screen and (min-width: 960px) {
-        margin-top: 9px;
-        text-align: left;
-    }
-    
+  margin-top: 8px;
+  text-align: center;
+  @media screen and (min-width: 960px) {
+    margin-top: 9px;
+    text-align: left;
+  }
 }
-
+.footer {
+    padding: 60px 0;
+}
 .footer-main-container {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .address-container {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .footer-soc-box {
-    padding: 60px 0;
-    @media screen and (min-width: 768px) and (max-width: 960px) {
-        padding: 0;
-    }
-    @media screen and (min-width: 960px) {
-        margin-left: 62px;
-        padding: 0;
-    }
-    
+  padding: 60px 0;
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 960px) {
+    margin-left: 62px;
+    padding: 0;
+  }
 }
 
 .footer-soc-title {
-    text-align: center;
-    margin-bottom: 20px;
-    
-    font-weight: 700;
-    @include font(14, 1.14, 0.03);
-    text-transform: uppercase;
-    color: $main-color;
-    @media screen and (min-width: 960px) {
-        margin-bottom: 30px;
-    }
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  @include font(14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: $main-color;
+  @media screen and (min-width: 960px) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer-soc-list {
-    @include flex();
-    @media screen and (min-width: 960px) {
-        display: flex;
-    }
+  @include flex();
+  @media screen and (min-width: 960px) {
+    display: flex;
+  }
 }
-    
-
 
 .footer-soc-items {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .footer-soc-items:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-soc-link {
-    @include flex();
-    width: 100%;
-    height: 100%;
+  @include flex();
+  width: 100%;
+  height: 100%;
 
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: $duration $timing-function;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: $duration $timing-function;
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-    background-color: $logo-color;
+  background-color: $logo-color;
 }
 
 .footer-soc-icons {
-    fill: $main-color;
+  fill: $main-color;
 }
 .label-subscribe {
-    font-weight: 700;
-    @include font(14, 1.14, 0.03);
-    text-transform: uppercase;
-    color: $main-color;
-    margin-bottom: 20px;
-    @media screen and (max-width: 767px) {
-        text-align: center;
-    }
+  font-weight: 700;
+  @include font(14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: $main-color;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .input-subscribe {
-    max-width: 450px;
-    width: 100%;
-    height: 50px;
+  max-width: 450px;
+  width: 100%;
+  height: 50px;
 
-    padding-left: 16px;
-    margin-bottom: 20px;
+  padding-left: 16px;
+  margin-bottom: 20px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 
-    background-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-    transition: border $duration $timing-function;
-    @media screen and (min-width: 960px) {
-        width: 358px;
-    }
+  transition: border $duration $timing-function;
+  @media screen and (min-width: 960px) {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 .form-subscribe {
-    
-    
-    @media screen and (min-width: 960px) {
-        margin-left: 123px;
-        margin-right: 0;
-
-        min-width: 570px;
-    }
+  @media screen and (min-width: 960px) {
+    margin-left: 125px;
+    margin-right: 0;
+    min-width: 570px;
+  }
 }
 
 .btn-subscribe {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding-left: 28px;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-family: inherit;
-    @include font(16, 1.88, 0.06);
-    font-weight: 700;
-    color: $main-color;
-    background-color: $logo-color;
+  padding-left: 28px;
 
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color $duration $timing-function;
-     @media screen and (min-width: 960px) {
-        margin-left: 12px;
-    }
+  font-family: inherit;
+  @include font(16, 1.88, 0.06);
+  font-weight: 700;
+  color: $main-color;
+  background-color: $logo-color;
+
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $duration $timing-function;
+  @media screen and (min-width: 960px) {
+    margin-left: 12px;
+  }
 }
 
 .btn-subscribe:hover,
 .btn-subscribe:focus {
-    background-color: $focus-btn-color;
+  background-color: $focus-btn-color;
 }
 
 .subscribe-icon {
-    fill: currentColor;
-    margin-left: 10px;
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .subscribe-box {
-
-    @media screen and (min-width: 960px) {
-        display: flex;
-        align-items: center;
-    }
+  @media screen and (min-width: 960px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.tablet-box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 70px 60px 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
     
+  }
 }

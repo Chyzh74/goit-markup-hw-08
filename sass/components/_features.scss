@@ -1,6 +1,6 @@
 .features {
     
-    @media screen and (min-width: 768px) and (max-width: 960px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -49,7 +49,9 @@
     }
     &>li {
         margin: 15px;
-        flex-basis: calc((100% - 60px)/2);
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            flex-basis: calc((100% - 60px)/2);
+        }
     }
 }
 .features-section {
