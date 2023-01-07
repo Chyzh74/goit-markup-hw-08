@@ -152,11 +152,15 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team marker">
                 <li class="team-card">
+                    <picture>
+                        <source srcset="./img/igor_desc.jpg 1x, ./img/igor_desc_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./img/igor_tab.jpg 1x, ./img/igor_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./img/igor_mob.jpg 1x, ./img/igor_mob_2x.jpg 2x" media="(max-width: 767px)" />
                     <img
-                    srcset="./img/img_1.jpg 1x, ./img/img_1_2x.jpg 2x" 
-                    src="./img/img_1.jpg" 
+                    src="./img/igor_mob.jpg" 
                     alt="чоловік в окулярах" 
                     width="270">
+                    </picture>
                     <h3 class="team-card__name">Ігор Дем'яненко</h3>
                     <p class="team-card__role">Product Designer</p>
                     <ul class="team-card__soc-list marker">
@@ -191,11 +195,15 @@
                     </ul>
                 </li>
                 <li class="team-card">
+                    <picture>
+                        <source srcset="./img/olga_desc.jpg 1x, ./img/olga_desc_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./img/olga_tab.jpg 1x, ./img/olga_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./img/olga_mob.jpg 1x, ./img/olga_mob_2x.jpg 2x" media="(max-width: 767px)" />
                     <img 
-                    srcset="./img/img_2.jpg 1x, ./img/img_2_2x.jpg 2x" 
-                    src="./img/img_2.jpg" 
+                    src="./img/olga_mob.jpg" 
                     alt="жінка в костюмі" 
                     width="270">
+                    </picture>
                     <h3 class="team-card__name">Ольга Рєпіна</h3>
                     <p class="team-card__role">Frontend Developer</p>
                     <ul class="team-card__soc-list marker">
@@ -230,11 +238,15 @@
                     </ul>
                 </li>
                 <li class="team-card">
+                    <picture>
+                        <source srcset="./img/mykola_desc.jpg 1x, ./img/mykola_desc_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./img/mykola_tab.jpg 1x, ./img/mykola_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./img/mykola_mob.jpg 1x, ./img/mykola_mob_2x.jpg 2x" media="(max-width: 767px)" />
                     <img 
-                    srcset="./img/img_3.jpg 1x, ./img/img_3_2x.jpg 2x" 
-                    src="./img/img_3.jpg" 
+                    src="./img/mykola_mob.jpg" 
                     alt="усміхнений чоловік" 
                     width="270">
+                    </picture>
                     <h3 class="team-card__name">Микола Тарасов</h3>
                     <p class="team-card__role">Marketing</p>
                     <ul class="team-card__soc-list marker">
@@ -269,11 +281,15 @@
                     </ul>
                 </li>
                 <li class="team-card">
+                    <picture>
+                        <source srcset="./img/myhailo_desc.jpg 1x, ./img/myhailo_desc_2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./img/myhailo_tab.jpg 1x, ./img/myhailo_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./img/myhailo_mob.jpg 1x, ./img/myhailo_mob_2x.jpg 2x" media="(max-width: 767px)" />
                     <img 
-                    srcset="./img/img_4.jpg 1x, ./img/img_4_2x.jpg 2x" 
-                    src="./img/img_4.jpg" 
+                    src="./img/myhailo_mob.jpg" 
                     alt="чоловік в окулярах" 
                     width="270">
+                    </picture>
                     <h3 class="team-card__name">Михайло Єрмаков</h3>
                     <p class="team-card__role">UI Designer</p>
                     <ul class="team-card__soc-list marker">
@@ -405,19 +421,20 @@
                 </li>
             </ul>
         </div>
-                <form class="form-subscribe" autocomplete="off">
-                    <h3 class="label-subscribe">Підпишіться на розсилку</h3>
-                    <div class="subscribe-box">
-                    <label class="field-subscribe">
-                        <input type="email" class="input-subscribe" name="email" placeholder="E-mail"/>
-                    </label>
-                    <button type="submit" class="btn-subscribe">
+            <form class="form-subscribe" autocomplete="off">
+                <h3 class="label-subscribe">Підпишіться на розсилку</h3>
+                <div class="subscribe-box">
+                <label class="field-subscribe">
+                    <input type="email" class="input-subscribe" name="email" placeholder="E-mail"/>
+                </label>
+                <button type="submit" class="btn-subscribe">
                         Підписатися
-                        <svg width="24" height="24" class="subscribe-icon">
-                            <use href="./img/icons.svg#icon-send"></use>
-                        </svg>
-                    </button></div>
-                </form>
+                    <svg width="24" height="24" class="subscribe-icon">
+                        <use href="./img/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        
     </div>
    </footer>
    <div class="backdrop is-hidden" data-modal>

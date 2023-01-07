@@ -167,7 +167,7 @@
 
     font-style: normal;
     font-weight: 400;
-    @include font(11, 1.16, 0.03);
+    @include font(12, 1.16, 0.03);
     color: $text-color;
     @media screen and (min-width: 960px) {
         @include font(14, 1.71, 0.03);
@@ -189,11 +189,11 @@
 .modal-link {
     font-style: normal;
     font-weight: 400;
-    @include font(11, 1.16, 0.03);
+    @include font(12, 1.16, 0.03);
     text-decoration-line: none;
 
     color: $logo-color;
-    margin-left: 3px;
+    margin-left: 6px;
     border-bottom: 1px solid;
     @media screen and (min-width: 960px) {
         @include font(14, 1.71, 0.03);

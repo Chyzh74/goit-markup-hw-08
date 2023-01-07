@@ -23,18 +23,25 @@
 }    
 .footer {
     background-color: $background-color;
-    @media screen and (max-width: 767px){
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 959px){
         padding-top: 60px;
         padding-bottom: 60px;
     }
+   
     
 }
 .address {
-    margin-left: auto;
-    margin-right: auto;
+    
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
 
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 960px) {
     padding: 60px 215px;
     height: 252px;
     width: 1600px;
@@ -89,6 +96,9 @@
 
 .footer-soc-box {
     padding: 60px 0;
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        padding: 0;
+    }
     @media screen and (min-width: 960px) {
         margin-left: 62px;
         padding: 0;

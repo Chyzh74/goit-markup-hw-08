@@ -1,9 +1,9 @@
 .features {
     
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 768px) and (max-width: 960px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        margin: -15px;
     }
     &__title {
         color: $header-color;
@@ -12,7 +12,7 @@
         font-weight: 700;
         @include font(14, 1.14, 0.03);
         text-align: center;
-        @media screen and (min-width: 960px) {
+        @media screen and (min-width: 768px) {
             text-align: left;
         }
     }
@@ -22,6 +22,9 @@
         @include font(14, 1.71, 0.03);
         max-width: 450px;
         height: 50px;
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            max-width: 354px;
+        }
         @media screen and (min-width: 960px) {
             width: 270px;
         }
@@ -33,6 +36,9 @@
         border-radius: 4px;
         margin-bottom: 30px;
         @include flex();
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            max-width: 354px;
+        }
         @media screen and (min-width: 960px) {
             width: 270px;
             height: 120px;
@@ -41,7 +47,10 @@
             margin-top: 30px;
         }
     }
-   
+    &>li {
+        margin: 15px;
+        flex-basis: calc((100% - 60px)/2);
+    }
 }
 .features-section {
     padding-top: 60px;
