@@ -57,10 +57,10 @@
     cursor: pointer;
     background-color: $focus-btn-color;
   }
-  @media screen and (min-width: 768px) and (max-width: 960px) {
-    max-width: 767.98px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
   }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     height: 600px;
     max-width: 1600px;
     padding: 0;

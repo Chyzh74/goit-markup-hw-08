@@ -29,7 +29,9 @@
 .menu-button .icon-cross:focus {
     fill: $logo-color;
 }
-
+.menu-button.is-open .field-subscribe{
+    display: none;
+}
 .mobile-menu__contacts {
     display: flex;
     flex-direction: column;
@@ -48,7 +50,7 @@
     background-color: $main-color;
     padding: 48px 40px;
     overflow: scroll;
-    
+    transform: translateY(-100%);
     transition: $duration $timing-function;
     @media screen and (min-width: 768px) {
         display: none;
@@ -56,6 +58,9 @@
     }
 }
 .mobile-menu.is-open {
+    transform: translateY(0);
+    overflow: scroll;
+    
     visibility: visible;
     display: flex;
     flex-direction: column;
