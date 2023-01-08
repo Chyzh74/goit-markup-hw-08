@@ -78,10 +78,6 @@ ul {
   .main-nav {
     display: flex;
     align-items: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 960px) {
-  .main-nav {
     height: 80px;
   }
 }
@@ -139,11 +135,6 @@ ul {
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav__link.current::after {
-    bottom: 8.8px;
   }
 }
 @media screen and (min-width: 767px) {
@@ -1394,13 +1385,21 @@ ul {
   font-size: 22px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  padding: 77px 24px;
+  padding: 45px 24px;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-cover-text {
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 42px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .portfolio-cover-text {
     font-size: 18px;
     line-height: 1.56;
@@ -1484,6 +1483,10 @@ ul {
   justify-content: space-between;
 }
 
+.mobile-menu.is-open.input-subscribe {
+  display: none;
+}
+
 .mobile-menu__list {
   padding: 0;
 }
@@ -1534,7 +1537,7 @@ ul {
 .mobile-contacts__list--numbers {
   font-weight: 500;
   font-style: normal;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -1552,7 +1555,7 @@ ul {
 .soc-link__link {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;

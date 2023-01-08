@@ -67,6 +67,9 @@
     height: 100%;
     justify-content: space-between;
 }
+.mobile-menu.is-open.input-subscribe {
+    display: none;
+}
 .mobile-menu__list {
     padding: 0;
 }
@@ -113,7 +116,7 @@
 .mobile-contacts__list--numbers {
     font-weight: 500;
     font-style: normal;
-    @include font (30, 1.17, 0.02);
+    @include font (34, 1.17, 0.02);
     
     color: $logo-color;
     
@@ -128,7 +131,7 @@
 .soc-link__link {
     font-style: normal;
     font-weight: 500;
-    @include font (14, 1.22, 0.02);
+    @include font (18, 1.22, 0.02);
     color: $logo-color;
 }
 
