@@ -265,7 +265,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
@@ -375,12 +375,12 @@ ul {
   max-width: 450px;
   height: 50px;
 }
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__text {
     max-width: 354px;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .features__text {
     width: 270px;
   }
@@ -400,7 +400,7 @@ ul {
     max-width: 354px;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .features__svg {
     width: 270px;
     height: 120px;
@@ -412,7 +412,7 @@ ul {
 .features > li {
   margin: 15px;
 }
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features > li {
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -422,7 +422,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .features-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -491,7 +491,7 @@ ul {
   padding-bottom: 60px;
   background-color: #f5f4fa;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .team__section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -506,7 +506,7 @@ ul {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .team__title {
     margin-bottom: 50px;
   }
@@ -562,7 +562,7 @@ ul {
   background-color: #2196f3;
   fill: #ffffff;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .team-card {
     width: 270px;
     height: 428px;
@@ -574,7 +574,7 @@ ul {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-card {
     max-width: 354px;
   }
@@ -584,7 +584,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1199px) {
   .client-section {
     padding-top: 94px;
     padding-bottom: 94px;

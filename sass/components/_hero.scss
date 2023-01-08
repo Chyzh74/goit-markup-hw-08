@@ -20,7 +20,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 1200px) {
       @include font(44, 1.36, 0.06);
       padding-top: 200px;
       width: 608px;
