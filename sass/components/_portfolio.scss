@@ -1,117 +1,161 @@
 .projects {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .project-btn {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  @media screen and (min-width: 768px) {
     justify-content: center;
+    gap: 8px;
+  }
 }
 
 .project-filter-btn {
-    color: $portfolio-main;
-    border: 0;
-    cursor: pointer;
-    font-weight: 500;
-    @include font(16, 1.62, none);
-    font-family: inherit;
+  color: $portfolio-main;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  @include font(16, 1.62, 0.03);
+  font-family: inherit;
 
-    min-width: 73px;
-    height: 38px;
-    border-radius: 4px;
+  min-width: 73px;
+  height: 38px;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+
+  transition: $duration $timing-function;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 8px;
-    padding: 6px 22px;
-
-    transition: $duration $timing-function;
+  }
 }
 
 .project-filter-btn:hover,
 .project-filter-btn:focus {
-    color: $main-color;
-    background-color: $logo-color;
+  color: $main-color;
+  background-color: $logo-color;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
 
-
 .project-box {
+  margin-top: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
-
     margin-top: 34px;
-
+  }
 }
 
 .project-title {
-    color: $portfolio-main;
-    font-weight: 700;
-    @include font(18, 2, 0.06);
-    padding-top: 20px;
-    padding-left: 24px;
-    margin-bottom: 4px;
+  color: $portfolio-main;
+  font-weight: 700;
+  @include font(18, 2, 0.06);
+  padding-top: 20px;
+  padding-left: 24px;
+  margin-bottom: 4px;
 }
 
 .project-dsc {
-    color: $text-color;
-    font-weight: 400;
-    @include font(16, 1.18, none);
+  color: $text-color;
+  font-weight: 400;
+  @include font(16, 1.18, none);
 
-    margin-bottom: 20px;
-    margin-left: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 .pr-box {
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  max-width: 450px;
+  width: 100%;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 370px;
-
+  }
 }
 
 .portfolio-list:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list:hover .portfolio-cover-text {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .portfolio-list {
-    transition: $duration $timing-function;
+  transition: $duration $timing-function;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 15px;
+  }
 }
 
 .portfolio-thumb {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  max-width: 450px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
 }
 
 .portfolio-cover-text {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 
-    font-weight: 400;
+  font-weight: 400;
+  @include font(22, 1.56, 0.03);
+  padding: 77px 24px;
+
+  color: $main-color;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: $duration $timing-function;
+  @media screen and (min-width: 768px) {
     @include font(18, 1.56, 0.03);
     padding: 63px 24px;
-
-    color: $main-color;
-    background-color: rgba(33, 150, 243, 0.9);
-
-    transform: translateY(100%);
-    transition: $duration $timing-function;
+  }
 }
