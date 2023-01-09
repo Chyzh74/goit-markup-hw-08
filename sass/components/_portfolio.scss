@@ -122,9 +122,12 @@
 
 .portfolio-list {
   transition: $duration $timing-function;
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
+  @media screen and (min-width: 1px) and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 15px;
   }
