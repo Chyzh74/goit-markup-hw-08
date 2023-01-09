@@ -122,7 +122,6 @@
 
 .portfolio-list {
   transition: $duration $timing-function;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 15px;
   }
